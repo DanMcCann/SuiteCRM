@@ -26,6 +26,15 @@ $dictionary['DM_purchases']['fields']['price_eur_c']['labelValue']='price eur';
 
  
 
+ // created: 2021-04-09 20:55:19
+$dictionary['DM_purchases']['fields']['name']['inline_edit']=true;
+$dictionary['DM_purchases']['fields']['name']['duplicate_merge']='disabled';
+$dictionary['DM_purchases']['fields']['name']['duplicate_merge_dom_value']='0';
+$dictionary['DM_purchases']['fields']['name']['merge_filter']='disabled';
+$dictionary['DM_purchases']['fields']['name']['unified_search']=false;
+
+ 
+
  // created: 2021-04-09 18:32:24
 $dictionary['DM_purchases']['fields']['purchase_date_c']['inline_edit']='1';
 $dictionary['DM_purchases']['fields']['purchase_date_c']['labelValue']='purchase date';

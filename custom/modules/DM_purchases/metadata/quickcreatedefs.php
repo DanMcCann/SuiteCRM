@@ -2,7 +2,7 @@
 $module_name = 'DM_purchases';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'QuickCreate' => 
   array (
     'templateMeta' => 
     array (
@@ -23,7 +23,7 @@ array (
       'useTabs' => false,
       'tabDefs' => 
       array (
-        'LBL_EDITVIEW_PANEL1' => 
+        'DEFAULT' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
@@ -32,12 +32,16 @@ array (
     ),
     'panels' => 
     array (
-      'lbl_editview_panel1' => 
+      'default' => 
       array (
         0 => 
         array (
           0 => 'name',
-          1 => '',
+          1 => 
+          array (
+            'name' => 'price_gbp_c',
+            'label' => 'LBL_PRICE_GBP',
+          ),
         ),
         1 => 
         array (
@@ -46,11 +50,7 @@ array (
             'name' => 'purchase_date_c',
             'label' => 'LBL_PURCHASE_DATE',
           ),
-          1 => 
-          array (
-            'name' => 'price_gbp_c',
-            'label' => 'LBL_PRICE_GBP',
-          ),
+          1 => '',
         ),
       ),
     ),

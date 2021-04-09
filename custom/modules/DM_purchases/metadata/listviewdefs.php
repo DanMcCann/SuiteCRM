@@ -2,12 +2,12 @@
 $module_name = 'DM_purchases';
 $listViewDefs [$module_name] = 
 array (
-  'PRODUCT_NAME_C' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
+    'width' => '32%',
+    'label' => 'LBL_NAME',
     'default' => true,
-    'label' => 'LBL_PRODUCT_NAME',
-    'width' => '10%',
+    'link' => true,
   ),
   'PRICE_GBP_C' => 
   array (

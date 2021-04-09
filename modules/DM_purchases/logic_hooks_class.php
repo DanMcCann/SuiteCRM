@@ -4,10 +4,7 @@
 class logic_hooks_class
 {
 
-    /**
-     * @return string
-     */
-    public function convert($bean, $event, $arguments)
+    public function convert($bean)
     {
         // Initialise Curl to perform the API call to convert the price.
         $ch = curl_init();
@@ -32,8 +29,5 @@ class logic_hooks_class
         $bean->price_aud_c = $price_aud;
         $bean->price_nzd_c = $price_nzd;
 
-        // The name being blank was annoying me.
-        $bean->name = $bean->product_name_c;
-        return 0;
     }
 }
